@@ -1,5 +1,15 @@
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+
+import HomeScreen from "./screens/HomeScreen";
+
 const App = () => {
-  return <h1 className="text-red-800 bg-blue-800">Test</h1>;
+  return (
+    <Router>
+      <Routes>
+        <Route path="/" element={<HomeScreen />} />
+      </Routes>
+    </Router>
+  );
 };
 
 export default App;
